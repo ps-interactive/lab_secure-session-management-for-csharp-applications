@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.  
+
+{% choice %}
+{% question %}
+Which line in `Program.cs` wires Serilog into the ASP.NET Core host so that all framework logs go through Serilog?
+{% /question %}
+{% option answer=true %}
+`builder.Host.UseSerilog();`
+{% /option %}
+{% option %}
+`builder.Logging.AddSerilog();`
+{% /option %}
+{% option %}
+`app.UseSerilog();`
+{% /option %}
+{% option %}
+`Log.ConfigureHost(builder);`
+{% /option %}
+{% /choice %}

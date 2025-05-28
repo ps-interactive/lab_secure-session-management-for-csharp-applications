@@ -1,0 +1,20 @@
+Examine each of the options below and select the correct answer.  
+
+{% choice %}
+{% question %}
+Despite the sanitized client response in Production mode, what is STILL written to the console unless you override the defaults?
+{% /question %}
+{% option %}
+Only the HTTP status code
+{% /option %}
+{% option answer=true %}
+The complete exception with method names, file paths, and embedded values
+{% /option %}
+{% option %}
+Nothing—the console is silent in Production
+{% /option %}
+{% option %}
+Only a single-line “Error occurred” message
+{% /option %}
+{% /choice %}
+

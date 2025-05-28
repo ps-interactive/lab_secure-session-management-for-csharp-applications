@@ -1,0 +1,20 @@
+Examine each of the options below and select the correct answer.  
+
+{% choice %}
+{% question %}
+In **Production** mode, what does ASP.NET Core return to the client when an unhandled exception occurs by default?
+{% /question %}
+{% option %}
+A full stack trace in JSON
+{% /option %}
+{% option answer=true %}
+A generic 500 Internal Server Error with no stack-trace details
+{% /option %}
+{% option %}
+An HTML diagnostics page containing the exception
+{% /option %}
+{% option %}
+A 403 Forbidden response
+{% /option %}
+{% /choice %}
+

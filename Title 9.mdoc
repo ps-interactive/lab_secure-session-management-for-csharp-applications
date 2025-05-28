@@ -1,0 +1,19 @@
+Examine each of the options below and select the correct answer.  
+
+{% choice %}
+{% question %}
+After introducing the global error-handling middleware, what JSON body is returned to the client when any unhandled exception occurs?
+{% /question %}
+{% option %}
+`{ "status": 500, "detail": "StackTrace here..." }`
+{% /option %}
+{% option %}
+`{ "error": "Password incorrect" }`
+{% /option %}
+{% option answer=true %}
+`{ "error": "Internal server error" }`
+{% /option %}
+{% option %}
+`{ "message": "See logs for details" }`
+{% /option %}
+{% /choice %}

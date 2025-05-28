@@ -1,0 +1,20 @@
+Examine each of the options below and select the correct answer.  
+
+{% choice %}
+{% question %}
+When an invalid login occurs after the Serilog upgrade, the `PasswordRedactorEnricher` replaces the password value with:
+{% /question %}
+{% option %}
+*****
+{% /option %}
+{% option %}
+(null)
+{% /option %}
+{% option answer=true %}
+[REDACTED]
+{% /option %}
+{% option %}
+****** (six asterisks)
+{% /option %}
+{% /choice %}
+
