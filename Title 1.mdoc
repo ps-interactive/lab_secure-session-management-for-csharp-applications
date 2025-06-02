@@ -3,18 +3,18 @@ Examine each of the options below and select the correct answer.
 
 {% choice %}
 {% question %}
-Which environment variable tells ASP.NET Core whether to run in Development or Production mode?
+Which cookie attribute must be set to ensure the browser only transmits the session ID over HTTPS connections?
 {% /question %}
-{% option %}
-DOTNET_ENV
-{% /option %}
-{% option %}
-ASPNET_MODE
-{% /option %}
 {% option answer=true %}
-ASPNETCORE_ENVIRONMENT
+Secure
 {% /option %}
 {% option %}
-NETCORE_ENV
+HttpOnly
+{% /option %}
+{% option %}
+SameSite
+{% /option %}
+{% option %}
+Max-Age
 {% /option %}
 {% /choice %}

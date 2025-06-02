@@ -2,19 +2,19 @@ Examine each of the options below and select the correct answer.
 
 {% choice %}
 {% question %}
-Which NuGet package was added so Serilog can write log events to rolling files?
+Which property in the JWT bearer middleware forces the runtime to reject tokens that have expired?
 {% /question %}
 {% option %}
-Serilog.Enrichers.Thread
+ValidateIssuerSigningKey
 {% /option %}
 {% option %}
-Serilog.Sinks.Debug
+ValidateAudience
 {% /option %}
 {% option answer=true %}
-Serilog.Sinks.File
+ValidateLifetime
 {% /option %}
 {% option %}
-Serilog.Formatting.Json
+ClockSkew
 {% /option %}
 {% /choice %}
 

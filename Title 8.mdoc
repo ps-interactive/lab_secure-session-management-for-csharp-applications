@@ -2,18 +2,18 @@ Examine each of the options below and select the correct answer.
 
 {% choice %}
 {% question %}
-Which line in `Program.cs` wires Serilog into the ASP.NET Core host so that all framework logs go through Serilog?
+One drawback of JSON Web Tokens compared with server-stored sessions is that a stolen token:
 {% /question %}
+{% option %}
+Automatically refreshes its signature every request
+{% /option %}
+{% option %}
+Can be invalidated by deleting server-side session state
+{% /option %}
 {% option answer=true %}
-`builder.Host.UseSerilog();`
+Remains valid until its expiry time because the server keeps no revocation list by default
 {% /option %}
 {% option %}
-`builder.Logging.AddSerilog();`
-{% /option %}
-{% option %}
-`app.UseSerilog();`
-{% /option %}
-{% option %}
-`Log.ConfigureHost(builder);`
+Contains the user’s password in plaintext
 {% /option %}
 {% /choice %}

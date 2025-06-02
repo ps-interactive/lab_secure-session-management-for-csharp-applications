@@ -2,19 +2,18 @@ Examine each of the options below and select the correct answer.
 
 {% choice %}
 {% question %}
-In the `ErrorHandlingMiddleware`, what `Content-Type` is set for the generic error response?
+When a client presents **no** JWT or an invalid JWT to `/api/secure`, the sample application returns which HTTP status code?
 {% /question %}
 {% option %}
-text/plain
-{% /option %}
-{% option %}
-text/html
+400 Bad Request
 {% /option %}
 {% option answer=true %}
-application/json
+401 Unauthorized
 {% /option %}
 {% option %}
-application/xml
+403 Forbidden
+{% /option %}
+{% option %}
+307 Temporary Redirect
 {% /option %}
 {% /choice %}
-

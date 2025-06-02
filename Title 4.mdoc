@@ -2,19 +2,19 @@ Examine each of the options below and select the correct answer.
 
 {% choice %}
 {% question %}
-The guideline “**fail closed, log open**” means:
+Setting `options.Cookie.SameSite = SameSiteMode.Strict;` in `Program.cs` prevents the cookie from being sent when the request originates:
 {% /question %}
+{% option %}
+From the same site over HTTPS
+{% /option %}
+{% option %}
+From the same site over HTTP
+{% /option %}
 {% option answer=true %}
-Show attackers as little as possible while capturing rich diagnostics internally
+From *any* external (cross-site) navigation or form submission
 {% /option %}
 {% option %}
-Abort the process immediately on any exception
-{% /option %}
-{% option %}
-Send full stack traces to both users and logs
-{% /option %}
-{% option %}
-Disable logging in Production environments
+From WebSockets
 {% /option %}
 {% /choice %}
 

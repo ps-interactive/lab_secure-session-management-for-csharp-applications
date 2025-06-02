@@ -2,19 +2,18 @@ Examine each of the options below and select the correct answer.
 
 {% choice %}
 {% question %}
-In **Production** mode, what does ASP.NET Core return to the client when an unhandled exception occurs by default?
+By default, ASP.NET Core marks its session cookie with which **single** security flag?
 {% /question %}
-{% option %}
-A full stack trace in JSON
-{% /option %}
 {% option answer=true %}
-A generic 500 Internal Server Error with no stack-trace details
+HttpOnly
 {% /option %}
 {% option %}
-An HTML diagnostics page containing the exception
+Secure
 {% /option %}
 {% option %}
-A 403 Forbidden response
+SameSite = Strict
+{% /option %}
+{% option %}
+Domain = localhost
 {% /option %}
 {% /choice %}
-
